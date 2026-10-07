@@ -5,7 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eaglercraft</title>
   <script>
-    window.location.replace("./eaglercraft-26.2-zeus-skins%20(1).html");
+    function launchab() {
+    const tab = window.open('about:blank', '_blank');
+    const iframe = tab.document.createElement('iframe');
+    const stl = iframe.style;
+    stl.border = stl.outline = 'none';
+    stl.width = '100vw';
+    stl.height = '100vh';
+    stl.position = 'fixed';
+    stl.left = stl.right = stl.top = stl.bottom = '0';
+    iframe.src = "./eaglercraft-26.2-zeus-skins%20(1).html";
+    tab.document.body.appendChild(iframe);
+    window.parent.window.location.replace('https://google.com/');
+    }
+
+    launchab();
   </script>
 </head>
 <body>
